@@ -1,0 +1,10 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+h1{
+    margin-bottom: 5px;
+}
+#board{
+    background-image: url("images/flappybirdbg.png");
+}
