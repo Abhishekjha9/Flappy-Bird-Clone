@@ -128,6 +128,7 @@ function placePipes(){
 }
 
 function moveBird(e){
+    velocityY=-6
     if(e.code=="Space" || e.code=="ArrowUp" || e.code=="X"){
       velocityY=-6;
     }
