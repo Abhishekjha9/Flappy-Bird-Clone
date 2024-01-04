@@ -53,7 +53,6 @@ window.onload = function(){
    requestAnimationFrame(update); 
    setInterval(placePipes, 1500);
    document.addEventListener("keydown", moveBird);
-   document.addEventListener("onclick", move);
 }
 
 function update(){
@@ -126,16 +125,7 @@ function placePipes(){
     pipeArray.push(topPipe);
     pipeArray.push(bottomPipe);
 }
-function move(){
-    velocityY=-6
 
-    if(gameOver){
-        bird.y=birdY;
-        pipeArray=[];
-        score=0;
-        gameOver=false;
-   }
-}
 function moveBird(e){
     velocityY=-6
     if(e.code=="Space" || e.code=="ArrowUp" || e.code=="X"){
